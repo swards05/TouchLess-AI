@@ -53,7 +53,7 @@ class HandTracker:
         tip_ids = [4, 8, 12, 16, 20]
 
         # Thumb
-        if self.landmarks[4][1] > self.landmarks[3][1]:
+        if abs(self.landmarks[4][1] - self.landmarks[3][1])>20:
             fingers[0] = 1
 
         # Other fingers

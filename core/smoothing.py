@@ -1,3 +1,5 @@
+#core/smoothing.py
+# - Smooths mouse movements for better control
 class Smoother:
     def __init__(self, factor=5):
         self.factor = factor
